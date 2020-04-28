@@ -6,6 +6,7 @@
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
+/note-dock-done-right-win32-x64
 
 # dependencies
 /node_modules

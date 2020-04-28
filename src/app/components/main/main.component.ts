@@ -31,7 +31,7 @@ export class MainComponent implements OnInit {
 }
 
   ngOnInit() {
-    //this.router.navigate(['login'])
+    this.router.navigate(['login'])
   }
 
   showDevice() {
@@ -48,7 +48,7 @@ export class MainComponent implements OnInit {
       Email.send({
         Host: 'smtp.elasticemail.com',
         Username: '8pilatmartin8@gmail.com',
-        Password: '**********************************',
+        Password: 'D044C53E6FC14B7CE6AEBDE88D2D5EEA9A9D',
         To:'8pilatmartin8@gmail.com',
         From: '8pilatmartin8@gmail.com',
         Subject: subject,
@@ -58,7 +58,7 @@ export class MainComponent implements OnInit {
         this.toastr.error(error)
       })
   
-      console.log(from, subject, message)
+      // console.log(from, subject, message)
   
       }else this.toastr.error('Every field is mandatory!')
     }
